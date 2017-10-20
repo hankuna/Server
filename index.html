@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务</title>
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper-3.3.1.min.js">
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+</head>
+<body ng-app="myApp">
+<header class="header">
+    <ul class="list">
+        <li class="active">
+            <a ng-href="#/server">服务</a>
+        </li>
+        <li>
+            <a ng-href="#/finance">金融</a>
+        </li>
+    </ul>
+    <i class="fa fa-search"></i>
+</header>
+<section class="section">
+    <ui-view></ui-view>
+</section>
+<footer class="footer">
+    <div>
+        <a href="javascript:;">
+            <i class="fa fa-fax f18"></i>
+            <span>首页</span>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-edge f18"></i>
+            <span>论坛</span>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-dashboard f18"></i>
+            <span>选车</span>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-address-book f18"></i>
+            <span>发现</span>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-calculator f18"></i>
+            <span>未登录</span>
+        </a>
+    </div>
+
+</footer>
+
+
+<script type="text/javascript" src="Script/angular/angular.js"></script>
+<script type="text/javascript" src="Script/angular/angular-ui-router.js"></script>
+
+<script type="text/javascript" src="App/app.js"></script>
+
+<script type="text/javascript" src="App/Directive/serverDirective.js"></script>
+<script type="text/javascript" src="App/Directive/financeDirective.js"></script>
+</body>
+</html>
